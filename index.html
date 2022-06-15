@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/331132e12f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="titolo">
+        <h1>Welcome to the Blackjack 21 mode</h1>
+        <p> Each players has 2 attempts to get as close as 21 as possible with the drawn cards, 
+            the Bank will win if it drawns an equal or bigger number.
+        </p>
+        <p>
+            In the 2 players mode the amount drawn by the bank is Doubled and the objective of the 2 players is to
+            get 42 together.
+        </p>
+    </div> 
+
+
+    <div class="primo">
+        <div>
+            <!--so, in the first row we need the form and and bank thing-->
+            <h2>Banco</h2>
+            <div id="banconum"></div>
+            <p id="bancostat"></p>
+        </div>
+
+        <div>
+
+            <form id="contaplay">
+                <h1>Number of players </h1>
+                <select name="" id="numplayer">
+                    <option value="none">--Choose a mode--</option>
+                    <option value="uno">One player</option>
+                    <option value="due">Two player</option>
+                </select>
+                <input type="submit" value="First hand" id="cont">
+            </form>
+        </div>
+
+    </div>
+
+    <div class="risultato">
+        <div id="banko">
+            <span> Banco </span>
+            <span id="bancofinal"></span>
+            <h2 id="bankowin"></h2>
+        </div>        
+
+        <span>Vs</span>
+
+        <div id="playa">
+            <span id="playfinal"></span>
+            <span id="playfinal1"></span>
+            <span>Players</span>
+
+            <h2 id="playawin"></h2>
+        </div>
+    </div>
+
+    <div>
+        <div id="ritentando">
+
+        </div>
+        <div id="ricominciando">
+
+        </div>
+    </div>
+
+    <div class="players">
+
+        <div>
+            <button id="playgio">player gioca</button>
+            <p id="playnum"></p>
+            <p id="playstat"></p>
+
+            <button id="playstand">stop</button>
+        </div>
+
+
+        <div id="giocatore2">
+            
+            <button id="playgio1">player gioca</button>
+            <p id="playnum1"></p>
+            <p id="playstat1"></p>
+
+            <button id="playstand1">stop</button>
+
+        </div>
+
+    </div>
+
+    <div id="over"></div>
+
+    <script src="./script.js">
+    </script>
+
+
+</body>
+</html>

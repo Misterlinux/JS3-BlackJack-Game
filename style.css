@@ -1,0 +1,315 @@
+
+html,body,div,form,fieldset,h1,h2,h3,h4,h5,h6,p,blockquote,pre,li,ul,ol
+{
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    background: transparent;
+
+    list-style: none;
+}
+table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+th,
+td
+{
+    text-align: left;
+    vertical-align: top;
+}
+img
+{
+    border: 0;
+}
+
+/*-----------------------------
+we can have the center of the radial circle be AT X/Y 
+*/
+body{
+    margin: auto 3em;
+    background: radial-gradient(circle at 50% 0%, rgba(153, 205, 50, 0.4) 30%, rgba(153, 205, 50, 0.8) 55%, yellowgreen 100%);
+}
+
+.titolo{
+    text-align: center;
+    margin: 1em auto;
+}
+
+.titolo h1{
+    font-size: large;
+}
+
+.titolo p{
+    font-size: smaller;
+}
+
+.primo{
+    display: flex;
+
+}
+
+.primo div{
+    flex-direction: column;
+    flex: 3;
+    text-align: center;
+}
+
+.primo div:nth-child(2){
+    flex: 2;
+    text-align: center;
+}
+
+.primo div:nth-child(2) #cont{
+    display: block;
+    margin: auto;
+}
+
+.risultato{
+    text-align: center;
+}
+
+.risultato{
+    margin: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*so, here is the after result */
+
+#ritentando{
+    text-align: center;
+}
+
+#ricominciando{
+    text-align: center;
+}
+
+.players{
+    display: flex;
+
+}
+
+.players div{
+    text-align: center;
+    flex: 1;
+}
+
+.players div:nth-child(2){
+    display: none;
+}
+
+.giocatore2{
+    text-align: center;
+    flex: 1;
+}
+
+/* ok so, lets try to get inside */
+
+#playgio{
+    margin: 10px 0px;
+}
+
+#playgio1{
+    margin: 10px 0px;
+}
+
+/*--------------------------------------------------*/
+#playnum > span {
+    border: solid white 1px;
+    margin: 3px;
+    padding: 18px 13px;
+
+    color: white;
+
+    font-size: 8px;
+}
+
+/*we didnt need to create the next*/
+#playnum span::before{
+    color: black;
+    text-align: center;
+    position: absolute;
+    z-index: -2;
+
+    font-size: 25px;
+    margin: 2px;
+
+    transform: translate(-44%, -45%);
+}
+
+#playnum span.fa-diamond::before, #playnum span.fa-heart::before{
+    color: red;
+}
+
+#playnum span.spada::before{
+    color: black;
+    transform: translate(-46%, -48%) rotate(-180deg);
+}
+/*--------------------------------------------------*/
+
+#playnum1 > span {
+    border: solid white 1px;
+    margin: 3px;
+    padding: 18px 13px;
+    color: white;
+
+    font-size: 8px;
+}
+
+#playnum1 span::before{
+    color: black;
+    text-align: center;
+    position: absolute;
+    z-index: -2;
+
+    font-size: 25px;
+    margin: 2px;
+
+    transform: translate(-44%, -45%);
+}
+
+#playnum1 span.fa-diamond::before, #playnum1 span.fa-heart::before{
+    color: red;
+}
+
+#playnum1 span.spada::before{
+    color: black;
+    transform: translate(-46%, -48%) rotate(-180deg);
+}
+
+/*-----------------------------------------------------*/
+
+#banconum > span {
+    border: solid white 1px;
+    margin: 3px;
+    padding: 18px 13px;
+    color: white;
+
+    font-size: 8px;
+
+}
+
+#banconum span::before{
+    color: black;
+    text-align: center;
+    position: absolute;
+    z-index: -2;
+
+    font-size: 25px;
+    margin: 2px;
+
+    transform: translate(-44%, -45%);
+}
+
+#banconum span.fa-diamond::before, #banconum span.fa-heart::before{
+    color: red;
+}
+
+#banconum span.spada::before{
+    color: black;
+    transform: translate(-46%, -48%) rotate(-180deg);
+}
+
+/*-------------------------------------------------*/
+
+#playstat{
+    margin-top: 5px;
+    margin-bottom: 3px;
+    display: block;
+}
+
+#playstand{
+    background-color: DarkSeaGreen;
+    color: white;
+
+    border-color: DarkOliveGreen;
+    margin-bottom: 15em;
+}
+
+#playstat1{
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+#playstand1{
+    background-color: gainsboro;
+    color: white;
+
+    border-color: gray;
+}
+
+/*rgb(140, 220, 5) red*/
+.risultato #banko{
+    background-color: MistyRose;
+    width: 40%;
+    height: 2.5em;
+}
+
+.risultato #playa{
+    background-color: MistyRose;
+    width: 40%;
+    height: 2.5em;
+}
+
+#bankowin{
+    color: white;
+}
+
+#playawin{
+    color: white;
+}
+
+
+#over{
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px)  {
+
+    body{
+        margin: auto 2em;
+    }
+
+    #playstand{
+        margin-bottom: 20em;
+    }
+
+    #playstand{
+        padding: 0.5em 1em;
+    }
+    
+    #playstand1{
+        padding: 0.5em 1em;
+    }
+
+    .primo div:nth-child(2) #cont{
+        padding: 0.3em 0.8em;
+    }
+
+    #numplayer{
+        padding: 0.5em 1em;  
+    }
+
+    #playgio{
+        padding: 0.5em 1em;  
+    }
+
+    #playgio1{
+        padding: 0.5em 1em;  
+    }
+
+    #ritentando button{
+        padding: 0.3em 0.8em;  
+    }
+
+    #ricominciando button{
+        padding: 0.3em 0.8em;  
+    }
+
+}
